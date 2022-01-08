@@ -102,6 +102,7 @@ table {
   bottom: 0;
   margin-bottom: 1%;
   padding: 1% 2% 1% 2%;
+  cursor: pointer;
 }
 
 #bottomButton,
@@ -113,9 +114,18 @@ table {
 #newGame {
   margin-top: 1%;
   padding: 1% 2% 1% 2%;
+  cursor: pointer;
 }
 
 img {
   width: 50px;
   height: 50px;
+}
+
+#rockBtn button,
+#paperBtn button,
+#scissorsBtn button {
+  border: 1px solid navy;
+  border-radius: 5px;
+  cursor: pointer;
 }

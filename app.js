@@ -105,12 +105,12 @@ function rockResult() {
     document.querySelector(".user-selected") &&
     document.querySelector(".rock-selected")
   ) {
-    console.log("Tie");
+    // console.log("Tie");
   } else if (document.querySelector(".paper-selected")) {
-    console.log("Comp wins!");
+    // console.log("Comp wins!");
     addCompTally();
   } else {
-    console.log("User wins!");
+    // console.log("User wins!");
     addUserTally();
   }
 }
@@ -120,8 +120,6 @@ function paperClick() {
   tableDisplay.style.display = "none";
   userPregameText.style.display = "none";
   compPregameText.style.display = "none";
-  // preGameDisplay.style.display = "none";
-  // userChoice.textContent = "PAPER";
 
   let img = document.createElement("img");
   img.src = "./images/Rock-paper-scissors_(paper).png";
@@ -139,15 +137,6 @@ function paperClick() {
   // after this click the computer needs to select simultaneously
   getComputerChoice();
 
-  // logic of result of who wins / a tie
-  // if (randomNumber === 0) { // 0 is ROCK //
-  //     result.textContent = "YOU WIN THIS ROUND :)";
-  // } else if (randomNumber === 1) { // 1 is PAPER //
-  //     result.textContent = "TIE THIS ROUND";
-  // } else if (randomNumber === 2) { // 2 is SCISSORS //
-  //     result.textContent = "COMPUTER WINS THIS ROUND :(";
-  // }
-
   paperResult();
 }
 
@@ -156,12 +145,12 @@ function paperResult() {
     document.querySelector(".user-selected") &&
     document.querySelector(".rock-selected")
   ) {
-    console.log("User wins!");
+    // console.log("User wins!");
     addUserTally();
   } else if (document.querySelector(".paper-selected")) {
-    console.log("Tie!");
+    // console.log("Tie!");
   } else {
-    console.log("Comp wins!");
+    // console.log("Comp wins!");
     addCompTally();
   }
 }
@@ -171,8 +160,6 @@ function scissorsClick() {
   tableDisplay.style.display = "none";
   userPregameText.style.display = "none";
   compPregameText.style.display = "none";
-  // preGameDisplay.style.display = "none";
-  // userChoice.textContent = "SCISSORS";
 
   let img = document.createElement("img");
   img.src = "./images/Rock-paper-scissors_(scissors).png";
@@ -190,15 +177,6 @@ function scissorsClick() {
   // after this click the computer needs to select simultaneously
   let random = getComputerChoice();
 
-  // logic of result of who wins / a tie
-  // if (random === 0) { // 0 is ROCK //
-  //     result.textContent = "COMPUTER WINS THIS ROUND :(";
-  // } else if (random === 1) { // 1 is PAPER //
-  //     result.textContent = "YOU WIN THIS ROUND :)";
-  // } else if (random === 2) { // 2 is SCISSORS //
-  //     result.textContent = "TIE THIS ROUND";
-  // }
-
   scissorsResult();
 }
 
@@ -207,13 +185,13 @@ function scissorsResult() {
     document.querySelector(".user-selected") &&
     document.querySelector(".rock-selected")
   ) {
-    console.log("Comp wins!");
+    // console.log("Comp wins!");
     addCompTally();
   } else if (document.querySelector(".paper-selected")) {
-    console.log("User wins!");
+    // console.log("User wins!");
     addUserTally();
   } else {
-    console.log("Tie!");
+    // console.log("Tie!");
   }
 }
 
@@ -238,7 +216,7 @@ function addUserTally() {
   userScore.textContent = userTally;
 
   if (userTally > 2) {
-    console.log("GAME OVER: User wins!");
+    // console.log("GAME OVER: User wins!");
     // Will need to restructure HTML to display user winning and no opportunity to play again (in the current game - will have to have a new game button later)
     competitonDisplay.style.display = "none";
     bottomButton.style.display = "none";
@@ -251,14 +229,14 @@ function addUserTally() {
 // Function for if user wins - to add to tally
 function addCompTally() {
   compTally++;
-  console.log(`Number of Comp Wins: ${compTally}`);
+  //   console.log(`Number of Comp Wins: ${compTally}`);
 
   // instead of console.log I want to display to Score for User Choice
 
   compScore.textContent = compTally;
 
   if (compTally > 2) {
-    console.log("GAME OVER: Comp wins!");
+    // console.log("GAME OVER: Comp wins!");
     // Will need to restructure HTML to display user winning and no opportunity to play again (in the current game - will have to have a new game button later)
     competitonDisplay.style.display = "none";
     bottomButton.style.display = "none";
