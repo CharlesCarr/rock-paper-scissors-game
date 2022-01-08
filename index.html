@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish&family=Rampart+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="app.js" defer></script>
+    <title>Rock. Paper. Scissors.</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Rock. Paper. Scissors.</h1>
+    </header>
+
+    <div id="play-again-question">
+      <p>Would you like to play again?</p>
+    </div>
+
+    <div id="topButton">
+      <button id="newGame">New Game</button>
+    </div>
+
+    <main>
+      <div id="competiton">
+        <div id="userHalf">
+          <h2>Your Choice</h2>
+          <p id="user-score">Score: <span id="user-value">0</span></p>
+          <p id="pregame-user-text">(Select Your Choice Below)</p>
+          <div id="yourChoiceDisplay"></div>
+
+          <div id="userSelection">
+            <table id="table">
+              <tr>
+                <td id="rockBtn">
+                  <button>
+                    <img
+                      src="./images/Rock-paper-scissors_(rock).png"
+                      alt="Rock"
+                      class="rpsImages"
+                    />
+                  </button>
+                </td>
+                <td id="paperBtn">
+                  <button>
+                    <img
+                      src="./images/Rock-paper-scissors_(paper).png"
+                      alt="Paper"
+                      class="rpsImages"
+                    />
+                  </button>
+                </td>
+                <td id="scissorsBtn">
+                  <button>
+                    <img
+                      src="./images/Rock-paper-scissors_(scissors).png"
+                      alt="Paper"
+                      class="rpsImages"
+                    />
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <th>Rock</th>
+                <th>Paper</th>
+                <th>Scissors</th>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div id="versus">VS</div>
+
+        <div id="computerHalf">
+          <h2>Computer's Choice</h2>
+          <p id="comp-score">Score: <span id="comp-value">0</span></p>
+          <p id="pregame-comp-text">CHOICE TBD</p>
+          <div id="computerChoiceDisplay"></div>
+        </div>
+      </div>
+
+      <div id="resultContainer">
+        <div id="results">
+          <h2>GAME OVER!</h2>
+          <div id="resultDisplay"></div>
+        </div>
+      </div>
+
+      <div id="bottomButton">
+        <button id="playAgain">Next Round</button>
+      </div>
+    </main>
+
+  </body>
+</html>
