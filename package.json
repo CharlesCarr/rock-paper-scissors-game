@@ -1,0 +1,23 @@
+{
+  "name": "rockpaperscissors",
+  "version": "1.0.0",
+  "description": "Built a user vs. computer Rock, Paper, Scissors game with HTML, CSS, and Vanilla JavaScript",
+  "main": "codecademy.js",
+  "scripts": {
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CharlesCarr/rock-paper-scissors-game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CharlesCarr/rock-paper-scissors-game/issues"
+  },
+  "homepage": "https://charlescarr.github.io/rock-paper-scissors-game",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
